@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.upper-banner {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-links-left,
+.upper-links-right {
+    display: flex;
+    align-items: center;
+
+}
+
+.upper-links-left a {
+    color: #888;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: auto;
+    padding-left: 17px;
+
+}
+
+.upper-links-right a, .upper-links-right p {
+    color: #888;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.upper-links-right a.icon {
+    font-size: 18px;
+}
+
+.upper-links-left a:hover,
+.upper-links-right a:hover {
+    color: #000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    border-bottom: 2px solid transparent; /* Create space for the line */
+    transition: border-color 0.3s; /* Smooth transition for color change */
+}
+
+.nav-links a:hover {
+    border-color: #00a3e0; /* Line color on hover */
+}
+        
+
+.logo {
+    font-family: dream avenue;
+}
+.logo img {
+    max-width: 200px; /* Set a max-width to ensure it doesn't overflow */
+    max-height: 200px; /* Adjust as needed */
+    object-fit: contain; /* Keeps aspect ratio */
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+  .search__input {
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 12em;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+  }
+    
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__button {
+    border: none;
+  }
+  
+.banner {
+    background-color: #e0f7ff;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.banner .slide a {
+    color: #00a3e0;
+    text-decoration: none;
+}
