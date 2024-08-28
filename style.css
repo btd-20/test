@@ -28,7 +28,8 @@ body {
 
 }
 
-.upper-links-right a, .upper-links-right p {
+.upper-links-right a,
+.upper-links-right p {
     color: #888;
     font-size: 14px;
     text-decoration: none;
@@ -54,29 +55,68 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 70px;
+    position: relative; /* Ensure dropdown positioning is relative to nav-links */
 }
 
 .nav-links a {
     text-decoration: none;
     color: #000;
     font-size: 16px;
-    border-bottom: 2px solid transparent; /* Create space for the line */
-    transition: border-color 0.3s; /* Smooth transition for color change */
+    border-bottom: 2px solid transparent;
+    /* Create space for the line */
+    transition: border-color 0.3s;
+    /* Smooth transition for color change */
 }
 
 .nav-links a:hover {
-    border-color: #00a3e0; /* Line color on hover */
+    border-color: #00a3e0;
+    /* Line color on hover */
 }
-        
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown a {
+    display: none;
+    padding: 10px;
+    color: #000;
+
+}
+
+.dropdown a:hover {
+    background-color: #f4f4f4;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+    /* Show dropdown on hover */
+}
+
 
 .logo {
     font-family: dream avenue;
 }
+
 .logo img {
-    max-width: 200px; /* Set a max-width to ensure it doesn't overflow */
-    max-height: 200px; /* Adjust as needed */
-    object-fit: contain; /* Keeps aspect ratio */
+    max-width: 200px;
+    /* Set a max-width to ensure it doesn't overflow */
+    max-height: 200px;
+    /* Adjust as needed */
+    object-fit: contain;
+    /* Keeps aspect ratio */
 }
 
 
@@ -91,7 +131,7 @@ body {
     font-size: 16px;
 }
 
-  .search__input {
+.search__input {
     background-color: #f4f2f2;
     border: none;
     color: #646464;
@@ -100,22 +140,22 @@ body {
     width: 12em;
     transition: all ease-in-out .5s;
     margin-right: -2rem;
-  }
-    
-  .search__input:focus {
+}
+
+.search__input:focus {
     outline: none;
     background-color: #f0eeee;
-  }
-  
-  .search__input::-webkit-input-placeholder {
+}
+
+.search__input::-webkit-input-placeholder {
     font-weight: 100;
     color: #ccc;
-  }
-  
-  .search__button {
+}
+
+.search__button {
     border: none;
-  }
-  
+}
+
 .banner {
     background-color: #e0f7ff;
     padding: 10px;
