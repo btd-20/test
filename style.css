@@ -1,14 +1,16 @@
+/* General reset */
 * {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
 header {
     position: fixed;
     width: 100%;
 }
+
 .upper-banner {
     background-color: #fff;
     padding: 10px 20px;
@@ -49,82 +51,97 @@ header {
 
 .navbar {
     position: relative;
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #f4f4f4;
+    
 }
 
 .nav-links {
     height: 100%;
     display: flex;
-    gap: 24px;
-    position: relative; /* Ensure dropdown positioning is relative to nav-links */
+    gap: 18px;
+    position: relative;
+    /* Ensure dropdown positioning is relative to nav-links */
 }
 
-.nav-links .head {
-    text-decoration: none;
-    color: #000;
-    font-size: 16px;
-    border-bottom: 2px solid transparent;
-    /* Create space for the line */
-    padding-bottom: 5px;
-    transition: border-color 0.5s;
-    /* Smooth transition for color change */
-    background-clip:content-box;
-}
-
-.nav-links .head:hover {
-    border-color: #00a3e0;
-    /* Line color on hover */
-}
-
-.nav-item {
-    height: 100%;
+.nav-links .nav-item {
     position: relative;
     display: inline-block;
 }
 
-.dropdown {    
+.nav-links .nav-item .dropdownbtn {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    height: 50px;
+    /* Ensure height is set */
+    border: transparent;
+    border: 5px solid transparent;
+    transition: border-color 0.5s;
+    background-color: #f4f4f4;
+}
+
+.nav-links .nav-item .dropdownbtn  {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links .nav-item .dropdownbtn:hover {
+    border-bottom: 5px solid #00a3e0;
+    /* Line color on hover */
+}
+
+.dropdown {
     display: none;
+    /* Initially hidden */
     position: absolute;
-    height: 10%;
+    height: 0;
+    /* Start with height 0 */
     width: 100vw;
-    top: 25px;
-    left: 0; /* Align to the left of the parent */
-    margin: 0 auto; /* Center horizontally */
     z-index: 1;
-    transition: height 3s;    background-color: #f4f4f4;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    /* Hide content overflow */
+    transition: height 2s ease;
+    /* Smooth transition */
 }
 
 .dropdown a {
-    display: block; /*fix none -> block*/
+    display: block;
     padding: 10px;
     color: #000000;
+    /* Ensure text color contrasts with background */
     background-color: #f4f4f4;
 }
 
 .dropdown a:hover {
     background-color: #f4f4f4;
+    /* Adjust color on hover */
 }
 
 .nav-item:hover .dropdown {
     display: block;
-    /* Show dropdown on hover */
+    /* Ensure the dropdown is shown */
+    height: 200px;
+    /* Desired height on hover */
 }
-
 
 .logo img {
+    padding-top: 7px;
     max-width: 200px;
-    /* Set a max-width to ensure it doesn't overflow */
     max-height: 200px;
-    /* Adjust as needed */
     object-fit: contain;
-    /* Keeps aspect ratio */
 }
-
 
 .search__input {
     background-color: #f4f2f2;
@@ -162,3 +179,4 @@ header {
     color: #00a3e0;
     text-decoration: none;
 }
+
