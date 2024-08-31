@@ -86,7 +86,7 @@
 }
 
 .nav-item:hover .column {
-    height: max-content;
+    height: fit-content;
     opacity: 1;
 }
 
@@ -95,23 +95,13 @@
     padding-top: 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: left;color: rgb(181, 179, 179);
 }
 
 .column h6 {
     color: rgb(134, 134, 134);
 
 }
-.column:hover h6 {
-    color: rgb(0, 0, 0);
-}
-
-.column a {
-    color: rgb(181, 179, 179);
-}
-
-
-
 
 
 
@@ -119,12 +109,6 @@
     color: rgb(97, 94, 94);
     padding-left: 5px;
     /*focus on hovered column*/
-}
-.column a:not(:hover) {
-    color: rgb(0, 0, 0);
-    padding-left: 5px;
-    /*focus on hovered column*/
-
 }   
 
 /* Add spacing on hover with a smooth transition */
