@@ -32,11 +32,14 @@
     height: 0;
     overflow: hidden;
     transition: height 0.18s ease-in-out;
+    
 }
 
 .nav-item:hover .dropdown-content {
-    height: 35vh;
+    height: 68vh;
+    
 }
+.nav-item:hover .
 
 .dropdown-content .header {
     display: flex;
@@ -75,8 +78,7 @@
 
 
 .column {
-    width: fit-content;
-    padding: 10px;
+    width: 150px;
     background-color: #f4f4f4;
     height: 0;
     overflow: hidden;
@@ -91,8 +93,8 @@
 }
 
 .column a {
-    padding-bottom: 14px;
-    padding-top: 16px;
+    padding-bottom: 9px;
+    padding-top: 9px;
     text-decoration: none;
     display: block;
     text-align: left;color: rgb(181, 179, 179);

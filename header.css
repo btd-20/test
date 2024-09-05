@@ -20,6 +20,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 5vh;
 }
 
 .upper-links-left,
@@ -53,6 +54,7 @@ header {
 }
 
 .navbar {
+    min-height: 6vh;
     position: relative;
     width: 100%;
     display: flex;
@@ -117,6 +119,7 @@ header {
     padding: 10px;
     text-align: center;
     font-size: 16px;
+   min-height: 4vh;
 }
 
 .banner .slide a {
