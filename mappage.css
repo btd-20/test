@@ -1,14 +1,27 @@
 main {
-    padding-top: 130px;
+    padding-top: 140px;
+    padding: 140px 50px 0px;
 }
-/* From Uiverse.io by zanina-yassine */ 
-.modal {
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 25px 4px
+}
+
+
+
+.default-view {
+  display: flex;
+  flex-direction: row;
+justify-content: space-around;
+}
+
+.newsmail-enroll {
     width: fit-content;
-    height: fit-content;
-    background: #FFFFFF;
-    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
-    border-radius: 26px;
-    max-width: 450px;
+    height: fit-content;  
   }
   
   .form {
@@ -66,8 +79,28 @@ main {
     box-shadow: 0px 0px 0px 0px #FFFFFF, 0px 0px 0px 0px #000000;
     transition: none
   }
+    
+  .security-certification {
+    width: 35vw;
+    color: gray;
   
-  .purchase--btn:hover {
-    box-border
+  }
+  .security-certification .shield {
+    padding-top: 60px;
+    display: flex;
+    flex-direction:row;
+    padding-bottom: 10px;
+
+  }
+
+  .security-certification img {
+    height: auto; 
+    width: auto; 
+    max-width: 70px; 
+    max-height: 70px;
+    padding-right: 10px;
   }
   
+  .security-certification p {
+    padding-bottom: 5px;
+  }
