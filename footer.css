@@ -1,0 +1,129 @@
+.quickaccess-row {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    border-bottom: 1px rgb(200, 200, 200) solid;
+}
+
+.quickaccess-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.quickaccess-column .column3 .flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectable-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*aligning*/
+footer {
+    padding: 40px 37px 0px;
+    background-color: #F3F3F3;
+    width: 100vw;
+    padding-bottom: 100px;
+}
+
+footer p {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    padding-bottom: 17px;
+
+}
+
+
+footer a {
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+    padding-bottom: 13px;
+}
+
+footer .column4 .clarify {
+    color: rgb(114, 114, 114);
+}
+
+.quickaccess-row .remark {
+    color: rgb(223, 178, 124);
+}
+
+.quickaccess-row a {
+    padding-right: 15px;
+}
+
+.column4 .footer-checkbox1 {
+    text-align: center;
+
+}
+
+footer .input_field {
+    width: auto;
+    height: 40px;
+    padding: 0 0 0 16px;
+    border-radius: 0px;
+    outline: solid rgb(212, 212, 212) 2px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e500;
+}
+
+.subscribe-newsmail {
+
+    height: 40px;
+    width: 150px;
+    background-color: #ffffff;
+    outline: solid black 2px;
+    color: #000000;
+
+}
+
+
+
+
+
+.terms-check {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.item {
+    padding-right: 90px;
+
+}
+
+
+footer .social-button p {
+    font-size: 15px;
+    font-family: sans-serif;
+    padding-top: 20px;
+}
+
+.item i {
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(103, 100, 100);
+    border-radius: 50%;
+    color: whitesmoke;
+
+}
+
+.caption {
+    display: block;
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+}

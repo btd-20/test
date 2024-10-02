@@ -1,0 +1,164 @@
+
+main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* General styling for the sidebar */
+.filter-sidebar {
+    width: 250px;
+    padding: 15px;
+
+}
+
+.filter-section {
+    margin-bottom: 20px;
+}
+
+.filter-section h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filter-options {
+    list-style-type: none;
+    padding: 0;
+}
+
+.filter-options li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.filter-options input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Size button styling */
+.size-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.size-options button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    border-radius: 4px;
+}
+
+.size-options button:hover {
+    background-color: #f0f0f0;
+}
+
+.size-options button:active {
+    background-color: #ddd;
+}
+
+/* Color option styling */
+.color-options {
+    display: flex;
+    gap: 8px;
+}
+
+.color-option {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.color-option:hover {
+    border-color: black;
+}
+
+/* Collapsible section styles */
+.filter-section h4 {
+    user-select: none;
+}
+
+.filter-options {
+    display: block;
+}
+
+.filter-section.collapsed .filter-options {
+    display: none;
+}
+
+
+/* Product Grid Styling */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+}
+
+.product-item {
+    height: fit-content;
+    text-align: left    ;
+    border: 1px solid transparent;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-tag {
+    color: rgb(172, 0, 0);
+    padding: 5px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    font-size: 12px;
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+
+.product-item h4 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}

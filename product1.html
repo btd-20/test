@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothing Co.</title>
-    <link rel="stylesheet" href="footer.css ".css">
+
+    <link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="footer.css ">
     <link rel="stylesheet" href="header-dropdown.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="homepage.css">
@@ -472,113 +474,189 @@
             </div>
         </div>
     </header>
-    <video class="highlight" id="myVideo" autoplay muted loop>
-        <source src="highlight.mp4" type="video/mp4">
-    </video>
 
-    <div class="highlight-specification">
-        <h6>Clothing personalized to yours liking</h6>
-        <h3>What If You Were a Shoe?</h3>
-        <p>Let's find out! Be just who you are by putting more youness in your
-            shoeness with Nike By You, Nike's co-creation service for Members. A
-            little more of this, a little less of that—just have fun customising a shoe
-            that feels more like you.</p>
-    </div>
 
-<footer>
-    <div class="affiliated"></div>
-    <div class="footer-menu"></div>
-    <div class="social-button"></div>
-</footer>
-<footer>
 
-    <div class="quickaccess-row ">
-        <a class="remark" href="">Legal Notice</a>
-        <a href="">Terms & Conditions</a>
-        <a href="">Data protection</a>
-        <a href="">Shipping information</a>
-    </div>
-    <div class="quickaccess-column">
-        <div class="column1">
-            <div class="selectable-menu">
-                <p>RESERVED E-SHOP</p>
-                <a href="">Delivery</a>
-                <a href="">Return & Exchanges</a>
-                <a href="">Payments</a>
-                <a href="">Size guide</a>
-                <a href="">Claims</a>
-                <a href="">Withdrawal form</a>
-                <a href="">Terms & Conditions</a>
-                <a href="">Privacy Policy</a>
-                <a href="">Cookie Policy</a>
+
+
+    <main>
+
+        <div class="product-spec-row">
+            <div class="image-gallery">
+                <div class="image-switcher">
+                    <a href="#img1">
+                        <img src="img/product1/1.png" alt="Thumb 1">
+                    </a>
+                    <a href="#img2">
+                        <img src="img/product1/2.png" alt="Thumb 2">
+                    </a>
+                    <a href="#img3">
+                        <img src="img/product1/3.png" alt="Thumb 3">
+                    </a>
+                </div>
+
+                <div class="image-container">
+                    <img src="img/product1/1.png" alt="Image 1" id="img1" class="image">
+                    <img src="img/product1/2.png" alt="Image 2" id="img2" class="image">
+                    <img src="img/product1/3.png" alt="Image 3" id="img3" class="image">
+                </div>
+            </div>
+
+            <div class="horizontal-specbox">
+                <div class="upper">
+                    <h4>Ordan Noe Ake 5 PF</h4>
+                    <p>Men's shoes</p>
+                    <p class="price"> <span class="discount-price">$1,757.39</span> <span
+                            class="original-price">$2,929.00</span><span class="discount-percent">40% off</span>
+                    </p>
+                </div>
+
+                <!-- Color Picker -->
+                <div class="color-picker">
+                    <span>Select Color:</span>
+                    <div class="color-options">
+                        <img src="img/product1/colorvariant/1.png" alt="Black Shoe" onclick="selectColor(this)"
+                            data-color="black">
+                        <img src="img/product1/colorvariant/2.png" alt="Beige Shoe" onclick="selectColor(this)"
+                            data-color="beige">
+                        <img src="img/product1/colorvariant/3.png" alt="Blue Shoe" onclick="selectColor(this)"
+                            data-color="blue">
+                        <img src="img/product1/colorvariant/4.png" alt="White Shoe" onclick="selectColor(this)"
+                            data-color="white">
+                        <img src="img/product1/colorvariant/5.png" alt="Red Shoe" onclick="selectColor(this)"
+                            data-color="red">
+                    </div>
+                </div>
+
+                <!-- Size Picker -->
+                <div class="size-picker">
+                    <span>Select Size:</span>
+                    <div class="sizes">
+                        <div class="size" onclick="selectSize(this)">EU 40</div>
+                        <div class="size" onclick="selectSize(this)">EU 40.5</div>
+                        <div class="size" onclick="selectSize(this)">EU 41</div>
+                        <div class="size" onclick="selectSize(this)">EU 42</div>
+                        <div class="size" onclick="selectSize(this)">EU 42.5</div>
+                        <div class="size" onclick="selectSize(this)">EU 43</div>
+                        <div class="size" onclick="selectSize(this)">EU 44</div>
+                        <div class="size" onclick="selectSize(this)">EU 45</div>
+                        <div class="size" onclick="selectSize(this)">EU 46</div>
+                        <div class="size" onclick="selectSize(this)">EU 47.5</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons (Add to Bag and Favourite) -->
+                <div class="action-buttons">
+                    <button class="add-to-bag">
+                        Add to Bag
+                    </button>
+                    <button class="add-to-favourite">
+                        <span class="heart-icon">❤️</span> Favourite
+                    </button>
+                </div>
+
             </div>
         </div>
-        <div class="column2">
-            <div class="selectable-menu">
-                <p>RESERVED STORE</p>
-                <a href="">Pricing information</a>
-                <a href="">Returns policy</a>
-                <a href="">Fraud report</a>
-            </div>
+    </main>
+
+    </main>
+
+
+
+
+
+
+
+
+    <footer>
+
+        <div class="quickaccess-row ">
+            <a class="remark" href="">Legal Notice</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Data protection</a>
+            <a href="">Shipping information</a>
         </div>
-        <div class="column3">
-            <div class="flexbox">
+        <div class="quickaccess-column">
+            <div class="column1">
                 <div class="selectable-menu">
-                    <p>MY ACCOUNT</p>
+                    <p>RESERVED E-SHOP</p>
                     <a href="">Delivery</a>
                     <a href="">Return & Exchanges</a>
                     <a href="">Payments</a>
+                    <a href="">Size guide</a>
+                    <a href="">Claims</a>
+                    <a href="">Withdrawal form</a>
+                    <a href="">Terms & Conditions</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Cookie Policy</a>
                 </div>
-
+            </div>
+            <div class="column2">
                 <div class="selectable-menu">
-                    <p>COMPANY</p>
-                    <a href="">About us</a>
-                    <a href="">Pressroom</a>
-                    <a href="">Carrer</a>
-                    <a href="">Ecoaware</a>
-                    <a href="">Our commitments
-                    </a>
+                    <p>RESERVED STORE</p>
+                    <a href="">Pricing information</a>
+                    <a href="">Returns policy</a>
+                    <a href="">Fraud report</a>
                 </div>
             </div>
+            <div class="column3">
+                <div class="flexbox">
+                    <div class="selectable-menu">
+                        <p>MY ACCOUNT</p>
+                        <a href="">Delivery</a>
+                        <a href="">Return & Exchanges</a>
+                        <a href="">Payments</a>
+                    </div>
+
+                    <div class="selectable-menu">
+                        <p>COMPANY</p>
+                        <a href="">About us</a>
+                        <a href="">Pressroom</a>
+                        <a href="">Carrer</a>
+                        <a href="">Ecoaware</a>
+                        <a href="">Our commitments
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="column4">
+                <div class="newsletter">
+                    <p>NEWSLETTER</p>
+                    <p class="clarify">
+                        Do you want to receive the newest trends and special offers? Sign up and get 10% off
+                    </p>
+                    <div class="input_container">
+
+                        <input class="input_field" type="text" title="Input title" placeholder="example@mail.com">
+                    </div>
+                    <div class="terms-check">
+                        <input type="checkbox" id="scales" name="text" unchecked />
+                        <label for="text">I accept <u style="color: darkblue;">newsletter terms</u></label>
+                    </div>
+                    <button class="subscribe-newsmail"><b>send</b></button>
+                </div>
+                <div class="social-button">
+                    <p>Or keep in touch via:</p>
+
+                    <div class="item">
+                        <p>Telegram</p>
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+
+                    <div class="item">
+                        <p>Facebook</p>
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                    </div>
+
+                    <div class="item">
+                        <p>Message</p>
+                        <i class="fa-regular fa-comment-dots"></i>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="column4">
-            <div class="newsletter">
-                <p>NEWSLETTER</p>
-                <p class="clarify">
-                    Do you want to receive the newest trends and special offers? Sign up and get 10% off
-                </p>
-                <div class="input_container">
-
-                    <input class="input_field" type="text" title="Input title" placeholder="example@mail.com">
-                </div>
-                <div class="terms-check">
-                    <input type="checkbox" id="scales" name="text" unchecked />
-                    <label for="text">I accept <u style="color: darkblue;">newsletter terms</u></label>
-                </div>
-                <button class="subscribe-newsmail"><b>send</b></button>
-            </div>
-            <div class="social-button">
-                <p>Or keep in touch via:</p>
-
-                <div class="item">
-                    <p>Telegram</p>
-                    <i class="fa-brands fa-telegram"></i>
-                </div>
-
-                <div class="item">
-                    <p>Facebook</p>
-                    <i class="fa-brands fa-facebook-messenger"></i>
-                </div>
-
-                <div class="item">
-                    <p>Message</p>
-                    <i class="fa-regular fa-comment-dots"></i>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</footer>
+    </footer>
 </body>
 
 

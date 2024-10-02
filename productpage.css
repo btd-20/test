@@ -1,0 +1,260 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Section */
+main {
+    
+    padding: 140px 50px 0;
+}
+
+.product-spec-row {
+    display: flex;
+    flex-direction: row;
+    gap: 50px; /* Add space between image gallery and product details */
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+}
+
+.image-switcher {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.image-switcher a {
+    cursor: pointer;
+    display: block;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.image-switcher img {
+    width: 70px; /* Adjusted size for thumbnails */
+    border-radius: 5px;
+}
+
+.image-switcher a:hover {
+    border-color: #ccc;
+}
+
+.image-container {
+    position: relative;
+    width: 400px;  /* Adjust main image size */
+    height: 400px;
+}
+
+.image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Show image 1 by default */
+.image#img1 {
+    opacity: 1;
+}
+
+.image:target {
+    opacity: 1;
+    z-index: 2;
+}
+
+.image:target ~ .image {
+    opacity: 0;
+    z-index: 1;
+}
+
+/* Product Details */
+.horizontal-specbox {
+    max-width: 600px;
+}
+
+.upper {
+    margin-bottom: 20px;
+}
+
+.upper h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.upper p {
+    font-size: 16px;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.discount-price {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.discount-percent {
+    color: green;
+}
+
+/* Chon loai giay */
+.color-picker {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.color-picker span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+}
+
+.color-options img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.color-options img:hover {
+    border-color: #000;
+    transform: scale(1.1);
+}
+
+/* Size Picker */
+.size-picker {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.size-picker span {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sizes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.size {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.size:hover {
+    background-color: #f0f0f0;
+}
+
+.size.selected {
+    border-color: #000;
+    background-color: #ddd;
+}
+
+
+
+/*add to cart*/
+/* Action Buttons Container */
+.action-buttons {
+    display: flex;
+    justify-content: space-between; /* Space between the two buttons */
+    gap: 10px; /* Spacing between the buttons */
+    margin-top: 20px; /* Spacing above the buttons */
+    width: 100%; /* Ensures full width */
+    max-width: 350px; /* Max width for large screens */
+}
+
+/* Add to Bag Button */
+.add-to-bag {
+    background-color: #000; /* Black background */
+    color: white; /* White text */
+    padding: 15px 20px; /* Padding to ensure appropriate button size */
+    font-size: 14px; /* Font size */
+    border: 1px solid transparent; /* No border */
+    border-radius: 80px; /* Rounded corners for smoother look */
+    cursor: pointer;
+    width: 60%; /* Occupies 65% of the available space */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    font-weight: bold; /* Bold text to match the design */
+}
+
+.add-to-bag:hover {
+    background-color: #333; /* Darker background on hover */
+}
+
+/* Add to Favourite Button */
+.add-to-favourite {
+    background-color: white; /* White background */
+    color: black; /* Black text */
+    padding: 15px 20px; /* Padding for size */
+    font-size: 14px; /* Font size */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 80px; /* Rounded corners */
+    cursor: pointer;
+    width: 40%; /* Occupies 30% of the available space */
+    text-align: center;
+    font-weight: bold;
+}
+
+.add-to-favourite:hover {
+    background-color: #f0f0f0; /* Light grey on hover */
+    border-color: #999; /* Darker border on hover */
+}
+
+/* Heart Icon Styling */
+.heart-icon {
+    margin-right: 5px; /* Spacing between heart icon and text */
+    color: red; /* Red heart */
+    font-size: 16px; /* Size of the heart icon */
+    vertical-align: middle; /* Align the heart icon vertically with text */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    .action-buttons {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        width: 100%; /* Full width on mobile */
+    }
+
+    .add-to-bag, .add-to-favourite {
+        width: 100%; /* Each button takes up the full width */
+    }
+
+    .add-to-bag {
+        margin-bottom: 10px; /* Adds spacing between buttons when stacked */
+    }
+}

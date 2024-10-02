@@ -20,7 +20,7 @@ justify-content: space-around;
 }
 
 .newsmail-enroll {
-    width: fit-content;
+    width: 35vw;
     height: fit-content;  
   }
   
@@ -56,7 +56,7 @@ justify-content: space-around;
     font-weight: 600;
   }
   
-  .input_field {
+  main .input_field {
     width: auto;
     height: 40px;
     padding: 0 0 0 16px;
@@ -81,6 +81,7 @@ justify-content: space-around;
   }
     
   .security-certification {
+    padding-left: 20px;
     width: 35vw;
     color: gray;
   
@@ -98,7 +99,7 @@ justify-content: space-around;
     width: auto; 
     max-width: 70px; 
     max-height: 70px;
-    padding-right: 10px;
+    padding-right: 10px;  
   }
   
   .security-certification p {
