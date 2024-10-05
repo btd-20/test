@@ -7,18 +7,153 @@
     object-position: center center;
 }
 
-.highlight-specification {
-    padding-top: 100px;
+.intro-box {
+    padding-top: 30px;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
-    text-align: center
-;}
-
-.highlight-specification h3 {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    justify-content: center; /* Aligns content horizontally */
 }
+.text-section {
+    text-align: center;
+    width: 600px;
+    padding: 20px;
+    
+    
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.shop-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.shop-button:hover {
+    background-color: #333;
+}
+
 
 main {
     padding-bottom: 50px;
 }
+
+/*recomendation*/
+.recommendations-section {
+    margin-top: 70px;
+    text-align: center;
+    padding: 20px;
+}
+
+.recommendations-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.recommendation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommendation-carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+    gap: 20px;
+    max-width: 80%;
+}
+
+.recommendation-item {
+    min-width: 220px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.recommendation-item img {
+    width: 70px;
+    border-radius: 8px;
+}
+
+.recommendation-item h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.recommendation-item p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+
+
+/*shop by sport*/
+
+
+.shop-by-sport {
+    padding: 20px;
+}
+
+.shop-by-sport h2 {
+    padding-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sport-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sport-item {
+    position: relative;
+    width: 30%;
+}
+
+.sport-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sport-label {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #000;
+
+}
+

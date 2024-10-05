@@ -7,14 +7,21 @@
 
 /* Main Section */
 main {
-    
-    padding: 140px 50px 0;
+
+    padding: 180px 50px 0;
 }
 
 .product-spec-row {
     display: flex;
     flex-direction: row;
-    gap: 50px; /* Add space between image gallery and product details */
+    justify-content: center;
+    padding-right: ;
+    gap: 50px;
+    /* Add space between image gallery and product details */
+}
+
+main .header1 {
+    padding-left: 100px;
 }
 
 /* Image Gallery */
@@ -37,7 +44,8 @@ main {
 }
 
 .image-switcher img {
-    width: 70px; /* Adjusted size for thumbnails */
+    width: 60px;
+    /* Adjusted size for thumbnails */
     border-radius: 5px;
 }
 
@@ -47,8 +55,14 @@ main {
 
 .image-container {
     position: relative;
-    width: 400px;  /* Adjust main image size */
-    height: 400px;
+    width: 500px;
+    /* Adjust main image size */
+    height: 600px;
+
+}
+
+.image-container img {
+    border-radius: 5px;
 }
 
 .image {
@@ -72,7 +86,7 @@ main {
     z-index: 2;
 }
 
-.image:target ~ .image {
+.image:~.image {
     opacity: 0;
     z-index: 1;
 }
@@ -191,70 +205,170 @@ main {
 /* Action Buttons Container */
 .action-buttons {
     display: flex;
-    justify-content: space-between; /* Space between the two buttons */
-    gap: 10px; /* Spacing between the buttons */
-    margin-top: 20px; /* Spacing above the buttons */
-    width: 100%; /* Ensures full width */
-    max-width: 350px; /* Max width for large screens */
+    justify-content: space-between;
+    /* Space between the two buttons */
+    gap: 10px;
+    /* Spacing between the buttons */
+    margin-top: 20px;
+    /* Spacing above the buttons */
+    width: 100%;
+    /* Ensures full width */
+    max-width: 350px;
+    /* Max width for large screens */
 }
 
 /* Add to Bag Button */
 .add-to-bag {
-    background-color: #000; /* Black background */
-    color: white; /* White text */
-    padding: 15px 20px; /* Padding to ensure appropriate button size */
-    font-size: 14px; /* Font size */
-    border: 1px solid transparent; /* No border */
-    border-radius: 80px; /* Rounded corners for smoother look */
+    background-color: #000;
+    /* Black background */
+    color: white;
+    /* White text */
+    padding: 15px 20px;
+    /* Padding to ensure appropriate button size */
+    font-size: 14px;
+    /* Font size */
+    border: 1px solid transparent;
+    /* No border */
+    border-radius: 80px;
+    /* Rounded corners for smoother look */
     cursor: pointer;
-    width: 60%; /* Occupies 65% of the available space */
+    width: 60%;
+    /* Occupies 65% of the available space */
     transition: background-color 0.3s ease, border-color 0.3s ease;
-    font-weight: bold; /* Bold text to match the design */
+    font-weight: bold;
+    /* Bold text to match the design */
 }
 
 .add-to-bag:hover {
-    background-color: #333; /* Darker background on hover */
+    background-color: #333;
+    /* Darker background on hover */
 }
 
 /* Add to Favourite Button */
 .add-to-favourite {
-    background-color: white; /* White background */
-    color: black; /* Black text */
-    padding: 15px 20px; /* Padding for size */
-    font-size: 14px; /* Font size */
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 80px; /* Rounded corners */
+    background-color: white;
+    /* White background */
+    color: black;
+    /* Black text */
+    padding: 15px 20px;
+    /* Padding for size */
+    font-size: 14px;
+    /* Font size */
+    border: 1px solid #ccc;
+    /* Light grey border */
+    border-radius: 80px;
+    /* Rounded corners */
     cursor: pointer;
-    width: 40%; /* Occupies 30% of the available space */
+    width: 40%;
+    /* Occupies 30% of the available space */
     text-align: center;
     font-weight: bold;
 }
 
 .add-to-favourite:hover {
-    background-color: #f0f0f0; /* Light grey on hover */
-    border-color: #999; /* Darker border on hover */
+    background-color: #f0f0f0;
+    /* Light grey on hover */
+    border-color: #999;
+    /* Darker border on hover */
 }
 
 /* Heart Icon Styling */
 .heart-icon {
-    margin-right: 5px; /* Spacing between heart icon and text */
-    color: red; /* Red heart */
-    font-size: 16px; /* Size of the heart icon */
-    vertical-align: middle; /* Align the heart icon vertically with text */
+    margin-right: 5px;
+    /* Spacing between heart icon and text */
+    color: red;
+    /* Red heart */
+    font-size: 16px;
+    /* Size of the heart icon */
+    vertical-align: middle;
+    /* Align the heart icon vertically with text */
 }
 
-/* Ensure responsiveness */
-@media (max-width: 768px) {
-    .action-buttons {
-        flex-direction: column; /* Stack buttons vertically on smaller screens */
-        width: 100%; /* Full width on mobile */
-    }
 
-    .add-to-bag, .add-to-favourite {
-        width: 100%; /* Each button takes up the full width */
-    }
 
-    .add-to-bag {
-        margin-bottom: 10px; /* Adds spacing between buttons when stacked */
-    }
+/*ratings*/
+/* General styling */
+
+
+
+.rating {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.stars span {
+    color: rgba(239, 239, 97, 0.955);
+}
+.rating-summary h2 {
+    font-size: 60px;
+    margin: 0;
+    color: #333;
+}
+
+/*recomendation*/
+.recommendations-section {
+    margin-top: 70px;
+    text-align: center;
+    padding: 20px;
+}
+
+.recommendations-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.recommendation-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommendation-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+    gap: 20px;
+    max-width: 80%;
+}
+
+.recommendation-item {
+    min-width: 220px;
+    text-align: left;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-item img {
+    width: 70px;
+    /* Adjusted size for thumbnails */
+    border-radius: 8px;
+}
+
+.recommendation-item h4 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.recommendation-item p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.price .new-price {
+    color: #e60023;
+    font-weight: bold;
+}
+
+.price .old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 12px;
+    margin-left: 10px;
 }

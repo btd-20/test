@@ -1,0 +1,69 @@
+
+  main {
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-bottom: 100px;
+  }
+ 
+  .content {
+    
+    display: flex;
+    flex-direction: row;
+ justify-content: space-between;
+    padding: 20px;
+  }
+
+  .left-content {
+    width: fit-content;
+    padding-top: 100px;
+  }
+
+  .buttons img {
+    width: 150px;
+  }
+  
+#appstore {
+    padding-top: 10px;
+}
+#googleplay {
+    padding: 0;
+    height: 70px;
+    width: fit-content;
+
+    
+    
+}
+
+#example1 {
+    width: 80%;
+   
+    
+}
+  
+  .content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .buttons {
+    display: flex;
+    
+    gap: 20px;
+    
+  }
+  
+
+  .phone-container {
+    margin-top: 50px;
+  }
+  
+  .phone {
+    width: 300px;
+    max-width: 100%;
+  }
+  

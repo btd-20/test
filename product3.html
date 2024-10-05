@@ -5,21 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clothing Co.</title>
+
+    <link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="footer.css ">
     <link rel="stylesheet" href="header-dropdown.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="shortcut icon" href="icons8-sneakers-16.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://kit.fontawesome.com/b25957ae4f.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
 
+<script src="https://kit.fontawesome.com/b25957ae4f.js" crossorigin="anonymous"></script>
+
+<body>
     <header>
         <nav class="upper-banner">
             <div class="upper-links-left">
@@ -40,7 +43,8 @@
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html"><img
-                        src="Black Beige Minimalist Simple Modern Typography Vanilla Cosmetics Logo.png" alt="Logo"></a>
+                        src="Black Beige Minimalist Simple Modern Typography Vanilla Cosmetics Logo.png"
+                        alt="Logo"></a>
             </div>
             <nav class="nav-links">
                 <!-- New & Featured -->
@@ -480,69 +484,96 @@
     </header>
 
 
+
+
+
     <main>
-        <video class="highlight" id="myVideo" autoplay muted loop>
-            <source src="highlight.mp4" type="video/mp4">
-        </video>
-        <div class="intro-box">
-            <div class="text-section">
-                <p class="title">Naike By You</p>
-                <h1 class="heading">What If You Were a Shoe?</h1>
-                <p class="text">
-                    Let's find out! Be just who you are by putting more youness in your shoeness
-                    with Nike By You, Nike's co-creation service for Members. A little more of
-                    this, a little less of that—just have fun customizing a shoe that feels more
-                    like you.
-                </p>
-                <a href="#" class="shop-button">Shop now</a>
+
+        <div class="product-spec-row">
+            <div class="image-gallery">
+                <div class="image-switcher">
+                    <a href="#img1">
+                        <img src="img/Product 3/1.png" alt="Thumb 1">
+                    </a>
+                    <a href="#img2">
+                        <img src="img/Product 3/2.png" alt="Thumb 2">
+                    </a>
+                </div>
+
+                <div class="image-container">
+                    <img src="img/Product 3/1.png" alt="Image 1" id="img1" class="image">
+                    <img src="img/Product 3/2.png" alt="Image 2" id="img2" class="image">
+                    
+                </div>
+            </div>
+
+            <div class="horizontal-specbox">
+                <div class="upper">
+                    <h4>Niake Air Force X</h4>
+                    <p>Men's shoes</p>
+                    <p class="price"> <span class="discount-price">3,929,000₫</span> <span
+                            class="original-price">4,929,000₫</span><span class="discount-percent">40% off</span>
+                    </p>
+                </div>
+
+                <!-- Color Picker -->
+                <div class="color-picker">
+                    <span>Select Color:</span>
+                    <div class="color-options">
+                        <img src="img/product 3/variant/1.png" >
+                        <img src="img/product 3/variant/2.png" >
+                       
+                    </div>
+                </div>
+
+                <!-- Size Picker -->
+                <div class="size-picker">
+                    <span>Select Size:</span>
+                    <div class="sizes">
+                        <div class="size">EU 40</div>
+                        <div class="size">EU 40.5</div>
+                        <div class="size">EU 41</div>
+                        <div class="size">EU 42</div>
+                        <div class="size">EU 42.5</div>
+                        <div class="size">EU 43</div>
+                        <div class="size">EU 44</div>
+                        <div class="size">EU 45</div>
+                        <div class="size">EU 46</div>
+                        <div class="size">EU 47.5</div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons (Add to Bag and Favourite) -->
+                <div class="action-buttons">
+                    <button class="add-to-bag">
+                        Add to Bag
+                    </button>
+                    <button class="add-to-favourite">
+                        <span class="heart-icon">❤️</span> Favourite
+                    </button>
+                
+                </div>
+                <div class="rating">
+                    <div class="rating-summary">
+                        <h2>4.3</h2>
+                        <div class="stars">
+                            <span>★★★★☆</span>
+                        </div>
+                        <p>46 ratings</p>
+                    </div>
+                    <div class="recommendation">
+                        <h3>86%</h3>
+                        <p>Recommended (13 of 15)</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+     
         <div class="recommendations-section">
-            <h2>All new, perfect for you</h2>
+            <h2>You Might Also Like</h2>
             <div class="recommendation-wrapper">
                 <div class="recommendation-carousel">
-                    <div class="recommendation-item">
-                        <img src="img/product 3/1.png" alt="Shoe 1">
-                        <h4>Niake Dunk Low SE</h4>
-                        <p>Baby/Toddler Shoes</p>
-                        <p class="price">
-                            <span class="new-price">1,431,199₫</span>
-                            <span class="old-price">1,799,000₫</span>
-                        </p>
-                    </div>
-                    <div class="recommendation-item">
-                        <img src="img/Product 4/1.png" alt="Shoe 2">
-                        <h4>Niake Next Nature</h4>
-                        <p>Men's Shoes</p>
-                        <p class="price">
-                            <span class="new-price">1,409,399₫</span>
-                            <span class="old-price">2,049,000₫</span>
-                        </p>
-                    </div>
-                    <div class="recommendation-item">
-                        <img src="img/Product 5/1.png" alt="Shoe 3">
-                        <h4>Niake Air Force 1</h4>
-                        <p>Men's Shoes</p>
-                        <p class="price">
-                            <span class="new-price">3,239,000₫</span>
-                        </p>
-                    </div>
-                    <div class="recommendation-item">
-                        <img src="img/Product 6/1.jpg" alt="Shoe 3">
-                        <h4>Niake Zephyrus</h4>
-                        <p>Men's Shoes</p>
-                        <p class="price">
-                            <span class="new-price">3,239,000₫</span>
-                        </p>
-                    </div>
-                    <div class="recommendation-item">
-                        <img src="img/Product 5/1.png" alt="Shoe 3">
-                        <h4>Niake Bore</h4>
-                        <p>Men's Shoes</p>
-                        <p class="price">
-                            <span class="new-price">3,239,000₫</span>
-                        </p>
-                    </div>
                     <div class="recommendation-item">
                         <img src="img/product 3/1.png" alt="Shoe 1">
                         <h4>Niake Dunk Low SE</h4>
@@ -589,24 +620,15 @@
             </div>
         </div>
 
-        <div class="shop-by-sport">
-            <h2>Shop By Sport</h2>
-            <div class="sport-gallery">
-                <div class="sport-item">
-                    <img src="thumbnail for index.html/running.jpg" alt="Running">
-                    <span class="sport-label">Running</span>
-                </div>
-                <div class="sport-item">
-                    <img src="thumbnail for index.html/footballz.jpg" alt="Football">
-                    <span class="sport-label">Football</span>
-                </div>
-                <div class="sport-item">
-                    <img src="thumbnail for index.html/basketball.jpg" alt="Basketball">
-                    <span class="sport-label">Basketball</span>
-                </div>
-            </div>
-        </div>
     </main>
+
+
+
+
+
+
+
+
     <footer>
 
         <div class="quickaccess-row ">
@@ -696,7 +718,6 @@
 
         </div>
     </footer>
-
 </body>
 
 

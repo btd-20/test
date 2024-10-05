@@ -1,3 +1,9 @@
+html, body {
+    overflow-x: hidden;
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
 * {
     font-family: Arial, sans-serif;

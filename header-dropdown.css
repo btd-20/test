@@ -1,3 +1,6 @@
+.nav-item a {
+    text-decoration: none;
+}
 .nav-links .nav-item .dropbtn {
     display: flex;
     justify-content: center;
@@ -39,7 +42,7 @@
     height: 68vh;
     
 }
-.nav-item:hover .
+
 
 .dropdown-content .header {
     display: flex;
@@ -139,3 +142,5 @@
     transition: margin 0.15s ease-in-out;
     /* Smooth transition for margin */
 }
+
+
