@@ -49,6 +49,38 @@ header {
     text-decoration: none;
     margin-left: 20px;
 }
+#SuccessUserLoginPrintout {
+    margin-left: 0 ;
+    font-size: 14px;       /* Set font size */
+    font-weight: bold;     /* Make the text bold */
+
+}
+
+#logoutBtn {
+    margin-left: 20px;
+    position: relative;
+    width: fit-content;
+    padding: 1.5px 10px;
+    background-color: rgb(46, 46, 46);
+    border-radius: 50px;
+    z-index: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: all 0.5s;
+  
+}
+
+#logoutBtn:hover {
+    
+    border-radius: 0;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
 
 .upper-links-right a.icon {
     font-size: 18px;

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin - Add Product</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+      } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-firestore.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyDK0BdPNJIYF5v_ar_pQNsZ_gRHJpUZWfc",
+        authDomain: "clothingco-database.firebaseapp.com",
+        projectId: "clothingco-database",
+        storageBucket: "clothingco-database.firebasestorage.app",
+        messagingSenderId: "437133311430",
+        appId: "1:437133311430:web:21afdc50ee24eddb1646c7",
+        measurementId: "G-SGGWD7SM9R",
+      };
+      const app = initializeApp(firebaseConfig);
+      const db = getFirestore(app);
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector("#product-form").onsubmit = async function (e) {
+          e.preventDefault();
+          // Gather form data
+          const form = this;
+          const data = {
+            tab: form.tab.value,
+            category: form.category.value,
+            name: form.name.value,
+            shoesType: form.shoesType.value,
+            price: Number(form.price.value),
+            originalPrice: Number(form.originalPrice.value),
+            defaultImage: form.defaultImage.value,
+            colors: JSON.parse(form.colors.value),
+            sizes: form.sizes.value.split(",").map((x) => x.trim()),
+            techSpecs: {
+              weight: form.weight.value,
+              heelToToeDrop: form.heelToToeDrop.value,
+              poweredBy: form.poweredBy.value,
+            },
+            celebThoughts: form.celebThoughts.value,
+          };
+          await addDoc(collection(db, "products"), data);
+          alert("Product added!");
+          form.reset();
+        };
+      });
+    </script>
+    <style>
+      form {
+        max-width: 600px;
+        margin: 40px auto;
+        background: #f8f8f8;
+        padding: 30px;
+        border-radius: 8px;
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Add Product</h2>
+    <form id="product-form">
+      <label
+        >Tab (Men, Women, Kids, Sale, etc): <input name="tab" required
+      /></label>
+      <label>Category: <input name="category" required /></label>
+      <label>Name: <input name="name" required /></label>
+      <label>Shoes Type: <input name="shoesType" required /></label>
+      <label>Price: <input name="price" type="number" required /></label>
+      <label
+        >Original Price: <input name="originalPrice" type="number"
+      /></label>
+      <label>Default Image URL: <input name="defaultImage" required /></label>
+      <label
+        >Colors (JSON format):
+        <textarea
+          name="colors"
+          required
+          placeholder='[{"name":"Red","images":{"main":"url","thumbs":["url1"],"variants":["url2"]}}]'
+        ></textarea>
+      </label>
+      <label
+        >Available Sizes (comma-separated): <input name="sizes" required
+      /></label>
+      <label>Weight: <input name="weight" /></label>
+      <label>Heel to Toe Drop: <input name="heelToToeDrop" /></label>
+      <label>Powered By: <input name="poweredBy" /></label>
+      <label
+        >Celebrity Thoughts: <textarea name="celebThoughts"></textarea>
+      </label>
+      <button type="submit">Add Product</button>
+    </form>
+  </body>
+</html>

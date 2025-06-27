@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clothing Co.</title>
+    
+        <link rel="stylesheet" href="css/productpage.css">
+        <link rel="stylesheet" href="css/footer.css ">
+        <link rel="stylesheet" href="css/header-dropdown.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/homepage.css">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="shortcut icon" href="icons8-sneakers-16.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+</head>
+<body>
+    <main>
+        <div class="product-spec-row">
+            <!-- Image Gallery -->
+            <div class="image-gallery">
+                <!-- Thumbnails will be dynamically added here -->
+                <div class="image-switcher"></div>
+
+                <!-- Main Images will be dynamically added here -->
+                <div class="image-container"></div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="horizontal-specbox">
+                <!-- Product Name, Category, and Price -->
+                <div class="upper">
+                    <h4></h4> <!-- Product Name -->
+                    <p></p> <!-- Product Category -->
+                    <p class="price">
+                        <span class="discount-price"></span>
+                        <span class="original-price"></span>
+                        <span class="discount-percent"></span>
+                    </p>
+                </div>
+
+                <!-- Color Picker -->
+                <div class="color-picker">
+                    <span>Select Color:</span>
+                    <div class="color-options"></div> <!-- Color Variants will be dynamically added here -->
+                </div>
+
+                <!-- Size Picker -->
+                <div class="size-picker">
+                    <span>Select Size:</span>
+                    <div class="sizes"></div> <!-- Sizes will be dynamically added here -->
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-buttons">
+                    <button class="add-to-bag">Add to Bag</button>
+                    <button class="add-to-favourite">
+                        <span class="heart-icon">❤️</span> Favourite
+                    </button>
+                </div>
+
+                <!-- Rating -->
+                <div class="rating">
+                    <div class="rating-summary">
+                        <h2></h2> <!-- Rating Score -->
+                        <div class="stars">
+                            <span>★★★★☆</span> <!-- Star Rating -->
+                        </div>
+                        <p></p> <!-- Number of Ratings -->
+                    </div>
+                    <div class="recommendation">
+                        <h3></h3> <!-- Recommendation Percentage -->
+                        <p></p> <!-- Recommendation Text -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recommendations Section -->
+        <div class="recommendations-section">
+            <h2>You Might Also Like</h2>
+            <div class="recommendation-wrapper">
+                <div class="recommendation-carousel"></div> <!-- Recommended Products will be dynamically added here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Link to JavaScript -->
+    <script src="./Js/productpage.js"></script>
+    <script src="Js/header+footer.js"></script>
+</body>
+</html>

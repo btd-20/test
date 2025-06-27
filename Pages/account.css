@@ -1,0 +1,286 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+  overflow: hidden;
+}
+
+/* Logo styles */
+.brand-logo a.text-logo {
+  font-family: 'Dream Avenue', serif;
+  font-size: 2.6rem;
+  color: #2f2f2f;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+/* Layout container */
+.container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Form container */
+.form-container {
+  width: 60vw;
+  padding: 100px 80px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.credential {
+    width: 35vw;
+}
+
+/* Headings */
+h1 {
+  font-size: 14px;
+  color: #6a6969;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* Floating input wrapper */
+.floating-input {
+  position: relative;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.floating-input input {
+  width: 100%;
+  padding: 16px 48px 16px 16px; /* space for icon */
+  border: 1.5px solid #cfd8dc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  transition: border-color 0.2s;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+  font-family: 'Poppins', sans-serif;
+}
+
+.floating-input input:focus {
+  border-color: #2979ff;
+  box-shadow: 0 0 6px #2979ff66;
+}
+
+.floating-input label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: #aaa;
+  background: #fff;
+  padding: 0 4px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.2s;.or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #999;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin: 24px 0;
+  gap: 12px;
+}
+
+.or span {
+  position: relative;
+  padding: 0 12px;
+  background: #fff; /* match your form background */
+  z-index: 1;
+  font-weight: 500;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #ccc;
+  display: block;
+}
+
+  font-family: 'Poppins', sans-serif;
+}
+
+.floating-input input:focus + label,
+.floating-input input:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 12px;
+  font-size: 13px;
+  color: #2979ff;
+  background: #fff;
+  font-weight: 600;
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  color: #b0bec5;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+/* Submit button */
+button[type='submit'] {
+  width: 100%;
+  padding: 14px;
+  background-color: #2979ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: 8px;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+/* OR separator */
+.or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #999;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin: 24px 0;
+  gap: 12px;
+}
+
+.or span {
+  position: relative;
+  padding: 0 12px;
+  background: #fff; /* match your form background */
+  z-index: 1;
+  font-weight: 500;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #ccc;
+  display: block;
+}
+
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.social-btn i {
+  font-size: 18px; /* smaller size, adjust as needed */
+}
+
+
+.social-btn {
+  flex: 1;
+  aspect-ratio: 2 / 0.6; /* Makes button square */
+  background: #fff;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+  color: inherit;
+}
+
+.social-btn:focus,
+.social-btn:hover {
+  border-color: #bdbdbd;
+  box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+}
+
+.social-facebook {
+  color: #1877f3;
+}
+
+.social-google {
+  color: #ea4335;
+}
+
+.social-apple {
+  color: #111;
+}
+
+
+/* Sign-in prompt */
+.sign-in {
+  margin-top: 24px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sign-in a {
+  color: #2979ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.sign-in a:hover {
+  text-decoration: underline;
+}
+
+
+
+#dynawall {
+  max-width: 100%;
+  height: auto;
+  padding-left: 50px;
+  object-fit: contain;
+  on
+}
+
+
+.image-container {
+    width: 40vw;
+    background: linear-gradient(135deg, #b6e0fe, #ffcbf2);
+    display: flex;
+    justify-content: center;  /* horizontally centers the image */
+    align-items: center;      /* vertically centers the image */
+}
+

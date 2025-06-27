@@ -5,9 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Main Section */
 main {
-
     padding: 180px 50px 0;
 }
 
@@ -15,13 +13,7 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-right: ;
     gap: 50px;
-    /* Add space between image gallery and product details */
-}
-
-main .header1 {
-    padding-left: 100px;
 }
 
 /* Image Gallery */
@@ -45,7 +37,6 @@ main .header1 {
 
 .image-switcher img {
     width: 60px;
-    /* Adjusted size for thumbnails */
     border-radius: 5px;
 }
 
@@ -56,9 +47,7 @@ main .header1 {
 .image-container {
     position: relative;
     width: 500px;
-    /* Adjust main image size */
     height: 600px;
-
 }
 
 .image-container img {
@@ -71,7 +60,6 @@ main .header1 {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
@@ -84,11 +72,6 @@ main .header1 {
 .image:target {
     opacity: 1;
     z-index: 2;
-}
-
-.image:~.image {
-    opacity: 0;
-    z-index: 1;
 }
 
 /* Product Details */
@@ -130,7 +113,7 @@ main .header1 {
     color: green;
 }
 
-/* Chon loai giay */
+/* Color Picker */
 .color-picker {
     display: flex;
     flex-direction: column;
@@ -158,6 +141,12 @@ main .header1 {
 }
 
 .color-options img:hover {
+    border-color: #000;
+    transform: scale(1.1);
+}
+
+/* Selected Color */
+.color-options img.active {
     border-color: #000;
     transform: scale(1.1);
 }
@@ -194,122 +183,90 @@ main .header1 {
     background-color: #f0f0f0;
 }
 
+/* Selected Size */
 .size.selected {
+    background-color: #000;
+    color: #fff;
     border-color: #000;
-    background-color: #ddd;
 }
 
-
-
-/*add to cart*/
-/* Action Buttons Container */
+/* Action Buttons */
 .action-buttons {
     display: flex;
     justify-content: space-between;
-    /* Space between the two buttons */
     gap: 10px;
-    /* Spacing between the buttons */
     margin-top: 20px;
-    /* Spacing above the buttons */
     width: 100%;
-    /* Ensures full width */
-    max-width: 350px;
-    /* Max width for large screens */
 }
 
-/* Add to Bag Button */
 .add-to-bag {
     background-color: #000;
-    /* Black background */
     color: white;
-    /* White text */
     padding: 15px 20px;
-    /* Padding to ensure appropriate button size */
     font-size: 14px;
-    /* Font size */
     border: 1px solid transparent;
-    /* No border */
     border-radius: 80px;
-    /* Rounded corners for smoother look */
     cursor: pointer;
     width: 60%;
-    /* Occupies 65% of the available space */
     transition: background-color 0.3s ease, border-color 0.3s ease;
     font-weight: bold;
-    /* Bold text to match the design */
 }
 
 .add-to-bag:hover {
     background-color: #333;
-    /* Darker background on hover */
 }
 
-/* Add to Favourite Button */
 .add-to-favourite {
     background-color: white;
-    /* White background */
     color: black;
-    /* Black text */
     padding: 15px 20px;
-    /* Padding for size */
     font-size: 14px;
-    /* Font size */
     border: 1px solid #ccc;
-    /* Light grey border */
     border-radius: 80px;
-    /* Rounded corners */
     cursor: pointer;
     width: 40%;
-    /* Occupies 30% of the available space */
     text-align: center;
     font-weight: bold;
 }
 
 .add-to-favourite:hover {
     background-color: #f0f0f0;
-    /* Light grey on hover */
     border-color: #999;
-    /* Darker border on hover */
 }
 
-/* Heart Icon Styling */
+/* Favorited State */
+.add-to-favourite.active {
+    background-color: #ffcccc;
+    border-color: #ff0000;
+}
+
 .heart-icon {
     margin-right: 5px;
-    /* Spacing between heart icon and text */
     color: red;
-    /* Red heart */
     font-size: 16px;
-    /* Size of the heart icon */
     vertical-align: middle;
-    /* Align the heart icon vertically with text */
 }
 
-
-
-/*ratings*/
-/* General styling */
-
-
-
+/* Ratings */
 .rating {
     padding-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    
 }
 
 .stars span {
-    color: rgba(239, 239, 97, 0.955);
+    color: rgba(255, 0, 0, 0.678);
 }
+
 .rating-summary h2 {
     font-size: 60px;
     margin: 0;
     color: #333;
 }
 
-/*recomendation*/
+/* Recommendations */
 .recommendations-section {
     margin-top: 70px;
     text-align: center;
@@ -347,7 +304,6 @@ main .header1 {
 
 .recommendation-item img {
     width: 70px;
-    /* Adjusted size for thumbnails */
     border-radius: 8px;
 }
 
@@ -371,4 +327,50 @@ main .header1 {
     color: #888;
     font-size: 12px;
     margin-left: 10px;
+}
+
+/* Cart and Wishlist Sections */
+.cart-section, .wishlist-section {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-section h2, .wishlist-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-items, .wishlist-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-item, .wishlist-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item img, .wishlist-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.cart-item h4, .wishlist-item h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.cart-item p, .wishlist-item p {
+    font-size: 14px;
+    margin: 0;
 }
