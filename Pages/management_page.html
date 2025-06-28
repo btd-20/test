@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Management</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/management_page.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="upper-banner">
+        <div class="upper-links-left">
+          <a href="getmobileapp.html">Install the mobile app</a>
+          <a href="map.html">Find a store</a>
+          <a href="map.html">Contact us</a>
+        </div>
+        <div class="upper-links-right">
+          <p id="SuccessUserLoginPrintout">Admin Panel</p>
+          <button id="logoutBtn">Logout</button>
+        </div>
+      </nav>
+
+      <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img
+              src="/img/media/Black Beige Minimalist Simple Modern Typography Vanilla Cosmetics Logo.png"
+              alt="Logo"
+          /></a>
+        </div>
+        <nav class="nav-links">
+          <!-- New & Featured -->
+          <div class="nav-item">
+            <a href="./navbar item/newandfeatured.html">
+              <button class="dropbtn">New & Featured</button>
+            </a>
+            <div class="dropdown-content">
+              <div class="header">
+                <h2>New & Featured</h2>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <h6>New & Featured</h6>
+                  <a href="#">New Arrivals</a>
+                  <a href="#">Latest Shoes</a>
+                  <a href="#">Latest Clothing</a>
+                  <a href="#">Customize</a>
+                  <a href="#">Bestsellers</a>
+                  <a href="#">Member Exclusive</a>
+                  <a href="#">National Team Kits</a>
+                  <a href="#">Top Kicks</a>
+                </div>
+
+                <!-- Shop Icons Column -->
+                <div class="column">
+                  <h6>Shop Icons</h6>
+                  <a href="#">Air Force 1</a>
+                  <a href="#">Air Jordan 1</a>
+                  <a href="#">Air Max</a>
+                  <a href="#">Dunk</a>
+                  <a href="#">Cortez</a>
+                  <a href="#">Blazer</a>
+                  <a href="#">Pegasus</a>
+                </div>
+
+                <!-- New For Men Column -->
+                <div class="column">
+                  <h6>New For Men</h6>
+                  <a href="#">Shoes</a>
+                  <a href="#">Clothing</a>
+                  <a href="#">Accessories</a>
+                  <a href="#">Shop All New</a>
+                </div>
+
+                <!-- New For Women Column -->
+                <div class="column">
+                  <h6>New For Women</h6>
+                  <a href="#">Shoes</a>
+                  <a href="#">Clothing</a>
+                  <a href="#">Accessories</a>
+                  <a href="#">Shop All New</a>
+                </div>
+
+                <!-- New For Kids Column -->
+                <div class="column">
+                  <h6>New For Kids</h6>
+                  <a href="#">Shoes</a>
+                  <a href="#">Clothing</a>
+                  <a href="#">Accessories</a>
+                  <a href="#">Shop All New</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Men -->
+          <div class="nav-item">
+            <a href="./navbar item/Men.html">
+              <button class="dropbtn">Men</button></a
+            >
+            <div class="dropdown-content">
+              <div class="header">
+                <h2>Men</h2>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <h6>Featured</h6>
+                  <a href="#">New Releases</a>
+                  <a href="#">Bestsellers</a>
+                  <a href="#">Member Exclusive</a>
+                  <a href="#">Jordan</a>
+                  <a href="#">Lifestyle Running</a>
+                  <a href="#">Customize</a>
+                  <a href="#">Sale</a>
+                  <a href="#">Running Shoe Finder</a>
+                  <a href="#">Sustainable Materials</a>
+                </div>
+
+                <!-- Jordan Column -->
+                <div class="column">
+                  <h6>Jordan</h6>
+                  <a href="#">All Jordan</a>
+                  <a href="#">New Jordan</a>
+                  <a href="#">Jordan Shoes</a>
+                  <a href="#">Jordan Clothing</a>
+                  <a href="#">Jordan Basketball</a>
+                  <a href="#">Jordan Lifestyle</a>
+                </div>
+
+                <!-- Shoes Column -->
+                <div class="column">
+                  <h6>Shoes</h6>
+                  <a href="#">All Shoes</a>
+                  <a href="#">Newest Sneakers</a>
+                  <a href="#">Jordan</a>
+                  <a href="#">Lifestyle</a>
+                  <a href="#">Running</a>
+                  <a href="#">Gym and Training</a>
+                  <a href="#">Basketball</a>
+                  <a href="#">Football</a>
+                  <a href="#">Sandals&Slides</a>
+                  <a href="#">Last Sizes Available</a>
+                  <a href="#">Customize</a>
+                  <a href="#">Top Kicks</a>
+                </div>
+
+                <!-- Clothing Column -->
+                <div class="column">
+                  <h6>Clothing</h6>
+                  <a href="#">All Clothing</a>
+                  <a href="#">Tops&T-Shirts</a>
+                  <a href="#">Shorts</a>
+                  <a href="#">Pants&Leggings</a>
+                  <a href="#">Hoodies&Sweatshirts</a>
+                  <a href="#">Jackets&Gilets</a>
+                  <a href="#">Jerseys&Kits</a>
+                  <a href="#">Jordan</a>
+                </div>
+
+                <!-- Accessories and Equipment Column -->
+                <div class="column">
+                  <h6>Accessories and Equipment</h6>
+                  <a href="#">All</a>
+                  <a href="#">Bags and Backpacks</a>
+                  <a href="#">Socks</a>
+                  <a href="#">Hats&Headwear</a>
+                </div>
+
+                <!-- Shop By Sport Column -->
+                <div class="column">
+                  <h6>Shop By Sport</h6>
+                  <a href="#">Running</a>
+                  <a href="#">Basketball</a>
+                  <a href="#">Football</a>
+                  <a href="#">Golf</a>
+                  <a href="#">Tennis</a>
+                  <a href="#">Gym&Training</a>
+                  <a href="#">Yoga</a>
+                  <a href="#">Skateboarding</a>
+                </div>
+
+                <!-- Shop By Brand Column -->
+                <div class="column">
+                  <h6>Shop By Brand</h6>
+                  <a href="#">Ours Sportswear</a>
+                  <a href="#">OursLab</a>
+                  <a href="#">Ours By You</a>
+                  <a href="#">Jordan</a>
+                  <a href="#">ACG</a>
+                  <a href="#">NBA</a>
+                  <a href="#">Ours SB</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Women -->
+          <div class="nav-item">
+            <a href="navbar item/women.html">
+              <button class="dropbtn">Women</button></a
+            >
+            <div class="dropdown-content">
+              <div class="header">
+                <h2>Women</h2>
+              </div>
+              <div class="row">
+                <!-- Featured Column -->
+                <div class="column">
+                  <h6>Featured</h6>
+                  <a href="#">New Releases</a>
+                  <a href="#">Bestsellers</a>
+                  <a href="#">Member Exclusive</a>
+                  <a href="#">Jordan</a>
+                  <a href="#">Lifestyle Running</a>
+                  <a href="#">Bra and Legging Duos</a>
+                  <a href="#">Customize</a>
+                  <a href="#">Sale</a>
+                  <a href="#">Ours Leggings</a>
+                  <a href="#">Running Shoe Finder</a>
+                  <a href="#">Sustainable Materials</a>
+                </div>
+
+                <!-- Shoes Column -->
+                <div class="column">
+                  <h6>Shoes</h6>
+                  <a href="#">All Shoes</a>
+                  <a href="#">Newest Sneakers</a>
+                  <a href="#">Platform Sneakers</a>
+                  <a href="#">Lifestyle</a>
+                  <a href="#">Jordan</a>
+                  <a href="#">Running</a>
+                  <a href="#">Gym and Training</a>
+                  <a href="#">Sandals&Slides</a>
+                  <a href="#">Basketball</a>
+                  <a href="#">Football</a>
+                  <a href="#">Last Sizes Available</a>
+                  <a href="#">Customize</a>
+                  <a href="#">Top Kicks</a>
+                </div>
+
+                <!-- Clothing Column -->
+                <div class="column">
+                  <h6>Clothing</h6>
+                  <a href="#">All Clothing</a>
+                  <a href="#">Performance Essentials</a>
+                  <a href="#">Tops&T-Shirts</a>
+                  <a href="#">Sports Bras</a>
+                  <a href="#">Pants and Leggings</a>
+                  <a href="#">Shorts</a>
+                  <a href="#">Hoodies&Sweatshirts</a>
+                  <a href="#">Jackets&Gilets</a>
+                  <a href="#">Skirts&Dresses</a>
+                  <a href="#">Modest Wear</a>
+                  <a href="#">Ours Maternity</a>
+                  <a href="#">Plus Size</a>
+                </div>
+
+                <!-- Accessories and Equipment Column -->
+                <div class="column">
+                  <h6>Accessories and Equipment</h6>
+                  <a href="#">All</a>
+                  <a href="#">Bags&Backpacks</a>
+                  <a href="#">Socks</a>
+                  <a href="#">Hats&Headwear</a>
+                </div>
+
+                <!-- Shop By Sport Column -->
+                <div class="column">
+                  <h6>Shop By Sport</h6>
+                  <a href="#">Yoga</a>
+                  <a href="#">Running</a>
+                  <a href="#">Gym&Training</a>
+                  <a href="#">Basketball</a>
+                  <a href="#">Tennis</a>
+                  <a href="#">Golf</a>
+                  <a href="#">Football</a>
+                  <a href="#">Skateboarding</a>
+                </div>
+
+                <!-- Shop By Brand Column -->
+                <div class="column">
+                  <h6>Shop By Brand</h6>
+                  <a href="#">Ours Sportswear</a>
+                  <a href="#">OursLab</a>
+                  <a href="#">OursByYou</a>
+                  <a href="#">Jordan</a>
+                  <a href="#">ACG</a>
+                  <a href="#">NBA</a>
+                  <a href="#">Ours SB</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kids -->
+          <div class="nav-item">
+            <a href="navbar item/kids.html">
+              <button class="dropbtn">Kids</button></a
+            >
+            <div class="dropdown-content">
+              <div class="header">
+                <h2>Kids</h2>
+              </div>
+              <div class="row">
+                <!-- Featured Column -->
+                <div class="column">
+                  <h6>Featured</h6>
+                  <a href="#">New Releases</a>
+                  <a href="#">Newest Sneakers</a>
+                  <a href="#">Easy On&Off</a>
+                  <a href="#">Bestsellers</a>
+                  <a href="#">Member Exclusive</a>
+                  <a href="#">Jordan</a>
+                  <a href="#">Last Sizes Available</a>
+                  <a href="#">Bags&Backpacks</a>
+                  <a href="#">Sale</a>
+                </div>
+
+                <!-- Kids By Age Column -->
+                <div class="column">
+                  <h6>Kids By Age</h6>
+                  <a href="#">Older Kids</a>
+                  <a href="#">Younger Kids</a>
+                  <a href="#">Babies&Toddlers</a>
+                </div>
+
+                <!-- Boys' Shoes Column -->
+                <div class="column">
+                  <h6>Boys' Shoes</h6>
+                  <a href="#">All Shoes</a>
+                  <a href="#">Older Boys</a>
+                  <a href="#">Younger Boys</a>
+                  <a href="#">Babies&Toddlers</a>
+                  <a href="#">Lifestyle</a>
+                  <a href="#">Jordan</a>
+                  <a href="#">Running</a>
+                  <a href="#">Basketball</a>
+                  <a href="#">Football</a>
+                  <a href="#">Sandals&Slides</a>
+                </div>
+
+                <!-- Boys' Clothing Column -->
+                <div class="column">
+                  <h6>Boys' Clothing</h6>
+                  <a href="#">Tops&T-Shirts</a>
+                  <a href="#">Hoodies&Sweatshirts</a>
+                  <a href="#">Pants&Leggings</a>
+                  <a href="#">Shorts</a>
+                  <a href="#">All</a>
+                </div>
+
+                <!-- Girls' Shoes Column -->
+                <div class="column">
+                  <h6>Girls' Shoes</h6>
+                  <a href="#">All Shoes</a>
+                  <a href="#">Older Girls</a>
+                  <a href="#">Younger Girls</a>
+                  <a href="#">Babies&Toddlers</a>
+                  <a href="#">Lifestyle</a>
+                  <a href="#">Jordan</a>
+                  <a href="#">Running</a>
+                  <a href="#">Basketball</a>
+                  <a href="#">Football</a>
+                  <a href="#">Sandals&Slides</a>
+                </div>
+
+                <!-- Girls' Clothing Column -->
+                <div class="column">
+                  <h6>Girls' Clothing</h6>
+                  <a href="#">Tops&T-Shirts</a>
+                  <a href="#">Sports Bras</a>
+                  <a href="#">Hoodies&Sweatshirts</a>
+                  <a href="#">Pants&Leggings</a>
+                  <a href="#">Shorts</a>
+                  <a href="#">All</a>
+                </div>
+
+                <!-- Accessories and Equipment Column -->
+                <div class="column">
+                  <h6>Accessories and Equipment</h6>
+                  <a href="#">All</a>
+                  <a href="#">Bags and Backpacks</a>
+                  <a href="#">Socks</a>
+                  <a href="#">Hats and Headwear</a>
+                </div>
+
+                <!-- Shop By Sport Column -->
+                <div class="column">
+                  <h6>Shop By Sport</h6>
+                  <a href="#">Football</a>
+                  <a href="#">Running</a>
+                  <a href="#">Basketball</a>
+                  <a href="#">Gym&Training</a>
+                  <a href="#">Tennis</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sale -->
+          <div class="nav-item">
+            <a href="./navbar item/Sale.html">
+              <button class="dropbtn">Sale</button></a
+            >
+            <div class="dropdown-content">
+              <div class="header">
+                <h2>Sale</h2>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <h6>Sale</h6>
+                  <a href="#">Shop All Sale</a>
+                  <a href="#">Shoes Sale</a>
+                  <a href="#">Clothing Sale</a>
+                  <a href="#">Accessories Sale</a>
+                </div>
+
+                <!-- Men's Sale Column -->
+                <div class="column">
+                  <h6>Men's Sale</h6>
+                  <a href="#">Shoes</a>
+                  <a href="#">Clothing</a>
+                </div>
+
+                <!-- Women's Sale Column -->
+                <div class="column">
+                  <h6>Women's Sale</h6>
+                  <a href="#">Shoes</a>
+                  <a href="#">Clothing</a>
+                </div>
+
+                <!-- Kids' Sale Column -->
+                <div class="column">
+                  <h6>Kids' Sale</h6>
+                  <a href="#">Shoes</a>
+                  <a href="#">Clothing</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Customise -->
+          <div class="nav-item">
+            <a href="navbar item/customize.html">
+              <button class="dropbtn">Customise</button></a
+            >
+          </div>
+
+          <!-- SNKRS -->
+          <div class="nav-item">
+            <a href="navbar item/snkrs.html">
+              <button class="dropbtn">SNKRS</button></a
+            >
+          </div>
+        </nav>
+
+        <div class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Find a product"
+          />
+          <button class="search__button">
+            <div class="search__icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </button>
+        </div>
+      </nav>
+
+      <div class="banner">
+        <div class="slide">
+          <a href="#">ADMIN MANAGEMENT PANEL - ADD AND MANAGE PRODUCTS</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="admin-container">
+      <h1 class="admin-title">Product Management</h1>
+      <p class="admin-subtitle">
+        Add and manage products for your ecommerce store
+      </p>
+
+      <div class="alert alert-success" id="successAlert">
+        Product saved successfully!
+      </div>
+      <div class="alert alert-error" id="errorAlert">
+        Please fill in all required fields!
+      </div>
+
+      <div class="admin-content">
+        <div class="product-form">
+          <h2><span id="currentCategory">Select a category first</span></h2>
+
+          <div class="form-group">
+            <label for="productName">Product Name *</label>
+            <input
+              type="text"
+              id="productName"
+              class="form-control"
+              placeholder="Enter product name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="productType">Product Type *</label>
+            <input
+              type="text"
+              id="productType"
+              class="form-control"
+              placeholder="e.g. Men's Shoes"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Colors *</label>
+            <div id="colorsContainer">
+              <div class="color-group">
+                <div class="form-group">
+                  <label>Color Name *</label>
+                  <input
+                    type="text"
+                    class="form-control color-name"
+                    placeholder="e.g. Red"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Image URLs (comma separated) *</label>
+                  <input
+                    type="text"
+                    class="form-control image-urls"
+                    placeholder="https://example.com/image1.jpg, https://example.com/image2.jpg"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Available Sizes *</label>
+                  <div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-40" value="EU 40" />
+                      <label for="size-40">EU 40</label>
+                    </div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-40.5" value="EU 40.5" />
+                      <label for="size-40.5">EU 40.5</label>
+                    </div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-41" value="EU 41" />
+                      <label for="size-41">EU 41</label>
+                    </div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-42" value="EU 42" />
+                      <label for="size-42">EU 42</label>
+                    </div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-42.5" value="EU 42.5" />
+                      <label for="size-42.5">EU 42.5</label>
+                    </div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-43" value="EU 43" />
+                      <label for="size-43">EU 43</label>
+                    </div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-44" value="EU 44" />
+                      <label for="size-44">EU 44</label>
+                    </div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-45" value="EU 45" />
+                      <label for="size-45">EU 45</label>
+                    </div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-46" value="EU 46" />
+                      <label for="size-46">EU 46</label>
+                    </div>
+                    <div class="size-checkbox">
+                      <input type="checkbox" id="size-47.5" value="EU 47.5" />
+                      <label for="size-47.5">EU 47.5</label>
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-danger remove-color">
+                  Remove Color
+                </button>
+              </div>
+            </div>
+            <button class="btn btn-secondary" id="addColor">
+              + Add Another Color
+            </button>
+          </div>
+
+          <div class="form-group">
+            <label for="originalPrice">Original Price (₫) *</label>
+            <input
+              type="number"
+              id="originalPrice"
+              class="form-control"
+              placeholder="3929000"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="discountedPrice">Discounted Price (₫)</label>
+            <input
+              type="number"
+              id="discountedPrice"
+              class="form-control"
+              placeholder="2929000"
+            />
+          </div>
+
+          <div class="btn-group">
+            <button class="btn btn-primary" id="saveProduct">
+              Add Product
+            </button>
+            <button class="btn btn-secondary" id="resetForm">Reset Form</button>
+          </div>
+        </div>
+
+        <div class="preview-panel">
+          <h2>Product Preview</h2>
+          <div class="product-spec-row">
+            <div class="image-gallery">
+              <div class="image-switcher">
+                <!-- Will be populated by JavaScript -->
+              </div>
+              <div class="image-container">
+                <!-- Will be populated by JavaScript -->
+              </div>
+            </div>
+
+            <div class="horizontal-specbox">
+              <div class="upper">
+                <h4 id="previewName">Product Name</h4>
+                <p id="previewType">Product Type</p>
+                <p class="price">
+                  <span class="discount-price" id="previewDiscountedPrice"
+                    >--₫</span
+                  >
+                  <span class="original-price" id="previewOriginalPrice"
+                    >--₫</span
+                  >
+                  <span
+                    class="discount-percent"
+                    id="previewDiscountPercent"
+                  ></span>
+                </p>
+              </div>
+
+              <div class="color-picker">
+                <span>Select Color:</span>
+                <div class="color-options" id="previewColors">
+                  <!-- Will be populated by JavaScript -->
+                </div>
+              </div>
+
+              <div class="size-picker">
+                <span>Select Size:</span>
+                <div class="sizes" id="previewSizes">
+                  <!-- Will be populated by JavaScript -->
+                </div>
+              </div>
+
+              <div class="action-buttons">
+                <button class="btn btn-primary add-to-bag">Add to Bag</button>
+                <button class="btn btn-secondary add-to-favourite">
+                  <span class="heart-icon">❤️</span> Favourite
+                </button>
+              </div>
+
+              <div class="rating">
+                <div class="rating-summary">
+                  <h2>4.3</h2>
+                  <div class="stars">
+                    <span>★★★★☆</span>
+                  </div>
+                  <p>46 ratings</p>
+                </div>
+                <div class="recommendation">
+                  <h3>86%</h3>
+                  <p>Recommended (13 of 15)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="products-list">
+        <h2>
+          Products in <span id="currentCategoryList">selected category</span>
+        </h2>
+        <div class="product-grid" id="productsGrid">
+          <!-- Products will be loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="Js/product_manager.js"></script>
+  </body>
+</html>
