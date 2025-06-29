@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/header-dropdown.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Shopping Cart</h1>
+      <section id="cart-items"></section>
+      <h3 id="total-price">Total: 0₫</h3>
+      <button onclick="clearCart()">Clear Cart</button>
+    </main>
+
+    <script type="module">
+      import {
+        getProductById,
+        getCartItems,
+        removeCartItem,
+        clearCart,
+      } from "./Js/helpers.js";
+
+      const cartContainer = document.getElementById("cart-items");
+      const totalDisplay = document.getElementById("total-price");
+
+      function renderCart() {
+        const cart = getCartItems();
+        let total = 0;
+
+        cartContainer.innerHTML = "";
+
+        if (cart.length === 0) {
+          cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+          totalDisplay.textContent = "Total: 0₫";
+          return;
+        }
+
+        Promise.all(
+          cart.map(async (item, index) => {
+            const product = await getProductById(item.productId);
+            if (!product) return null;
+
+            const itemTotal =
+              item.quantity *
+              (product.discountedPrice || product.originalPrice);
+            total += itemTotal;
+
+            const img =
+              product.colors?.[0]?.images?.[0] ||
+              "https://via.placeholder.com/80x80?text=No+Image";
+
+            const div = document.createElement("div");
+            div.className = "cart-item";
+            div.innerHTML = `
+            <img src="${img}" width="80">
+            <div>
+              <h4>${product.name}</h4>
+              <p>Color: ${item.color} | Size: ${item.size}</p>
+              <p>Quantity: ${item.quantity}</p>
+              <p>Price: ${itemTotal.toLocaleString()}₫</p>
+              <button onclick="removeCartItem(${index}); location.reload();">Remove</button>
+            </div>
+          `;
+            cartContainer.appendChild(div);
+          })
+        ).then(() => {
+          totalDisplay.textContent = `Total: ${total.toLocaleString()}₫`;
+        });
+      }
+
+      // Initialize cart
+      renderCart();
+
+      // Make clearCart available globally
+      window.clearCart = function () {
+        if (confirm("Are you sure you want to clear your cart?")) {
+          clearCart();
+          location.reload();
+        }
+      };
+    </script>
+
+    <script src="./Js/header+footer.js"></script>
+  </body>
+</html>

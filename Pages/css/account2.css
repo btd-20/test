@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.form-container {
+    width: 60vw;
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.brand-logo img {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.brand-logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.align {
+    padding-left: 38px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.or {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    color: #999;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social-btn {
+    width: 30%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: white;
+}
+
+.google {
+    background-color: #db4437;
+    color: white;
+}
+
+.apple {
+    background-color: black;
+    color: white;
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+}
+
+.sign-in {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.sign-in a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.sign-in a:hover {
+    text-decoration: underline;
+}
+
+.image-container {
+    width: 40vw;
+    background: linear-gradient(135deg, #b6e0fe, #ffcbf2);
+    display: flex;
+    justify-content: center;  /* horizontally centers the image */
+    align-items: center;      /* vertically centers the image */
+}
+
+
+#mobileapp {
+    padding-left: 500px;
+    width: 220%;
+}

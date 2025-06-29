@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="css/productpage.css" />
+    <link rel="stylesheet" href="css/header-dropdown.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+    <head>
+      <!-- Add these first -->
+      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+
+      <!-- Then your other scripts -->
+    </head>
+    <script src="./Js/firebaseConfig.js"></script>
+    <script src="./Js/helpers.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      <div class="product-spec-row" id="product-detail"></div>
+    </main>
+
+    <script type="module">
+      import { getProductById, addToCart } from "./Js/helpers.js";
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = urlParams.get("id");
+
+      getProductById(productId).then((p) => {
+        const container = document.getElementById("product-detail");
+        if (!p) {
+          container.innerHTML = "<p>Product not found.</p>";
+          return;
+        }
+        const images = p.colors?.[0]?.images || [];
+        const sizes = p.colors?.[0]?.sizes || [];
+
+        container.innerHTML = `
+        <div class="image-gallery">
+          <div class="image-switcher">
+            ${images
+              .map(
+                (img, i) =>
+                  `<a href="#img${i + 1}"><img src="${img}" alt="thumb${
+                    i + 1
+                  }"></a>`
+              )
+              .join("")}
+          </div>
+          <div class="image-container">
+            ${images
+              .map(
+                (img, i) => `<img src="${img}" id="img${i + 1}" class="image">`
+              )
+              .join("")}
+          </div>
+        </div>
+        <div class="horizontal-specbox">
+          <div class="upper">
+            <h4>${p.name}</h4>
+            <p>${p.type}</p>
+            <p class="price">
+              <span class="discount-price">${p.discountedPrice.toLocaleString()}₫</span>
+              <span class="original-price">${p.originalPrice.toLocaleString()}₫</span>
+            </p>
+          </div>
+          <div class="size-picker">
+            <span>Select Size:</span>
+            <div class="sizes">
+              ${sizes.map((s) => `<div class="size">${s}</div>`).join("")}
+            </div>
+          </div>
+          <div class="action-buttons">
+            <button class="add-to-bag" onclick="addToCart('${p.id}', '${
+          p.colors[0].name
+        }', '${sizes[0]}')">Add to Bag</button>
+            <button class="add-to-favourite">❤️ Favourite</button>
+          </div>
+        </div>`;
+      });
+    </script>
+    <script src="./Js/header+footer.js"></script>
+  </body>
+</html>
